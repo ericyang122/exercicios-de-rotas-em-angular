@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'tela-confirmar/:QntdDias/:ValorDiaria/:ValorPagar',
+    loadChildren: () => import('./tela/tela.module').then( m => m.TelaPageModule)
+  },
+  {
+    path: 'tela-confirmar-cadastro/:ValorPagar',
+    loadChildren: () => import('./tela-confirmar-cadastro/tela-confirmar-cadastro.module').then( m => m.TelaConfirmarCadastroPageModule)
+  },
 ];
 
 @NgModule({

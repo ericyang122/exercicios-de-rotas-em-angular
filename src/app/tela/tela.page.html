@@ -1,0 +1,12 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>tela</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-label> quantidade de dias :{{QntdDias}}</ion-label><br>
+  <ion-label> valor da diaria :{{ValorDiaria}}</ion-label><br>
+  <ion-label>Total a pagar :{{ValorPagar}}</ion-label><br>
+  <ion-button expand="block" (click)="confirmar()">confirmar</ion-button>
+</ion-content>
